@@ -1,5 +1,7 @@
-tutorial-django-ajax
-====================
+Tutorial on Python, Django and AJAX
+===================================
+
+# Welcome
 
 Hi,
 
@@ -12,3 +14,17 @@ I have a little bit changed structure of default Django project. Main change is 
 * **wsgi.py** - WSGI application module
 
 Source code for each part of tutorial is in sample application folders (eg. sample1, sample2, etc.).
+
+# Using
+
+To properly work with this example you need to be installed follwoing libraries:
+
+* Python 2.7
+* Django 1.6
+
+To run samples just run following commands on your favorite console:
+
+  python manage.py syncdb
+  python manage.py runserver
+
+First command will create databe if it is not exists or migrate data if it is exists. Second ccommand will run local server on address http://localhost:8000/.
