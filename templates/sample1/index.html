@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block page %}
+<h1>
+    {{ message }}
+</h1>
+
+<button type="button">Hello Server!</button>
+
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+    $(function() {
+        $("button").click(function() {
+            $.ajax({
+                url: "{% url 'sample1:hello' %}",
+                type: "get",
+                success: function(data) {
+                    alert(data);
+                },
+                failure: function(data) { 
+                    alert("Got an error dude");
+                }
+            });
+        })
+    })
+</script>
+{% endblock %}
