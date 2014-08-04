@@ -8,15 +8,13 @@
 {% block page %}
 {% endblock %}
 <!-- /Page content -->
-
-<hr/>
+<hr />
 <p>
-    Current path: {{ request.path }}<br/>
+    Current path: {{ request.path }}<br />
     {% if request.path != '/' %}
         <a href='/'>Back to home page.</a>
     {% endif %}
 </p>
-
 <!-- Footer scritps -->
 {% block scripts %}
 {% endblock %}

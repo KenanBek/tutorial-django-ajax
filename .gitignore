@@ -1,6 +1,7 @@
 # Mac and Database file
 *.DS_Store
 *.sqlite3
+.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

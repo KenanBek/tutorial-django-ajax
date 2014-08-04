@@ -1,11 +1,9 @@
 {% extends "layout.html" %}
-
 <!-- PAGE -->
 {% block page %}
     <section id="rootwizard" class="tabbable tile">
         <div class="tile-header transparent">
             <h1><strong>Form</strong> Wizard</h1>
-
             <div class="controls">
                 <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
                 <a href="#" class="remove"><i class="fa fa-times"></i></a>
@@ -27,79 +25,52 @@
                     <form class="form-horizontal form1" role="form" parsley-validate>
                         <div class="form-group">
                             <label for="fullname" class="col-sm-2 control-label">Full Name *</label>
-
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="fullname" parsley-trigger="change"
-                                       parsley-required="true" parsley-minlength="4" parsley-validation-minlength="1">
+                                <input type="text" class="form-control" id="fullname" parsley-trigger="change" parsley-required="true" parsley-minlength="4" parsley-validation-minlength="1">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="password" class="col-sm-2 control-label">Password *</label>
-
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" id="password" parsley-trigger="change"
-                                       parsley-required="true" parsley-minlength="6" parsley-type="alphanum"
-                                       parsley-validation-minlength="1">
+                                <input type="password" class="form-control" id="password" parsley-trigger="change" parsley-required="true" parsley-minlength="6" parsley-type="alphanum" parsley-validation-minlength="1">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="passwordconfirm" class="col-sm-2 control-label">Password Confirm *</label>
-
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" id="passwordconfirm"
-                                       parsley-trigger="change" parsley-required="true" parsley-minlength="6"
-                                       parsley-type="alphanum" parsley-validation-minlength="1"
-                                       parsley-equalto="#password">
+                                <input type="password" class="form-control" id="passwordconfirm" parsley-trigger="change" parsley-required="true" parsley-minlength="6" parsley-type="alphanum" parsley-validation-minlength="1" parsley-equalto="#password">
                             </div>
                         </div>
                     </form>
                 </div>
-
                 <div class="tab-pane" id="tab2">
-
                     <form class="form-horizontal form2" role="form" parsley-validate id="contact">
-
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label">Email *</label>
-
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" parsley-trigger="change"
-                                       parsley-required="true" parsley-minlength="4" parsley-type="email"
-                                       parsley-validation-minlength="1">
+                                <input type="email" class="form-control" id="email" parsley-trigger="change" parsley-required="true" parsley-minlength="4" parsley-type="email" parsley-validation-minlength="1">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="website" class="col-sm-2 control-label">Website</label>
-
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="website" parsley-trigger="change"
-                                       parsley-minlength="4" parsley-type="url" parsley-validation-minlength="1">
+                                <input type="text" class="form-control" id="website" parsley-trigger="change" parsley-minlength="4" parsley-type="url" parsley-validation-minlength="1">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="fullname" class="col-sm-2 control-label">Phone Number</label>
-
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="fullname" parsley-trigger="change"
-                                       parsley-type="phone" parsley-validation-minlength="0" placeholder="1234567891">
+                                <input type="text" class="form-control" id="fullname" parsley-trigger="change" parsley-type="phone" parsley-validation-minlength="0" placeholder="1234567891">
                             </div>
                         </div>
-
                     </form>
-
                 </div>
-
                 <div class="tab-pane" id="tab3">
-
                     <form class="form-horizontal form3" role="form" parsley-validate id="contact">
-
                         <div class="form-group">
                             <div class="col-sm-12">
                                 <div class="checkbox">
-                                    <input type="checkbox" value="1" id="opt01" parsley-trigger="change"
-                                           parsley-required="true" name="eula">
+                                    <input type="checkbox" value="1" id="opt01" parsley-trigger="change" parsley-required="true" name="eula">
                                     <label for="opt01">EULA acceptation *</label>
                                 </div>
                                 <div class="checkbox">
@@ -108,92 +79,76 @@
                                 </div>
                             </div>
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
         </div>
-        // /tile body
-
-        //tile footer
         <div class="tile-footer border-top">
             <ul class="pager pager-custom wizard">
                 <li class="previous"><a href="javascript:;"><i class="fa fa-arrow-left fa-lg"></i></a></li>
                 <li class="next"><a href="javascript:;"><i class="fa fa-arrow-right fa-lg"></i></a></li>
-                <li class="next finish" style="display:none;"><a href="javascript:;"><i
-                        class="fa fa-check fa-lg"></i></a></li>
+                <li class="next finish" style="display:none;">
+                    <a href="javascript:;"><i class="fa fa-check fa-lg"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <b>sad</b><i>asd</i>
+                </li>
+                <li>
+                    asd
+                </li>
+                <li>
+                    asd
+                </li>
             </ul>
         </div>
-        // /tile footer
-
     </section>
-    // /tile
-
-    //****************************//
-    //*********** jquery *********//
-    //****************************//
-
-    //initialize form wizard
-    $('#rootwizard').bootstrapWizard({
-
-    'tabClass': 'nav nav-tabs tabdrop',
-    onTabShow: function(tab, navigation, index) {
-    var $total = navigation.find('li').length;
-    var $current = index+1;
-    var $percent = ($current/$total) * 100;
-    $('#rootwizard').find('#bar .progress-bar').css({width:$percent+'%'});
-
-    // If it's the last tab then hide the last button and show the finish instead
-    if($current >= $total) {
-    $('#rootwizard').find('.pager .next').hide();
-    $('#rootwizard').find('.pager .finish').show();
-    $('#rootwizard').find('.pager .finish').removeClass('disabled');
-    } else {
-    $('#rootwizard').find('.pager .next').show();
-    $('#rootwizard').find('.pager .finish').hide();
-    }
-    },
-
-    onNext: function(tab, navigation, index) {
-
-    var form = $('.form' + index)
-
-    form.parsley('validate');
-
-    if(form.parsley('isValid')) {
-    tab.addClass('success');
-    } else {
-    return false;
-    }
-
-    },
-
-    onTabClick: function(tab, navigation, index) {
-
-    var form = $('.form' + (index+1))
-
-    form.parsley('validate');
-
-    if(form.parsley('isValid')) {
-    tab.addClass('success');
-    } else {
-    return false;
-    }
-
-    }
-
-    });
-
-    //  Initialize tabDrop
-    $('.tabdrop').tabdrop({text: '<i class="fa fa-th-list"></i>'})
 {% endblock %}
 <!-- /PAGE -->
-
 <!-- SCRIPTS -->
 {% block scripts %}
+    <script type="text/javascript">
+        $('#rootwizard').bootstrapWizard({
 
+            'tabClass': 'nav nav-tabs tabdrop',
+            onTabShow: function (tab, navigation, index) {
+                var $total = navigation.find('li').length;
+                var $current = index + 1;
+                var $percent = ($current / $total) * 100;
+                $('#rootwizard').find('#bar .progress-bar').css({width: $percent + '%'});
+                // If it's the last tab then hide the last button and show the finish instead
+                if ($current >= $total) {
+                    $('#rootwizard').find('.pager .next').hide();
+                    $('#rootwizard').find('.pager .finish').show();
+                    $('#rootwizard').find('.pager .finish').removeClass('disabled');
+                } else {
+                    $('#rootwizard').find('.pager .next').show();
+                    $('#rootwizard').find('.pager .finish').hide();
+                }
+            },
+            onNext: function (tab, navigation, index) {
+                var form = $('.form' + index)
+                form.parsley('validate');
+                if (form.parsley('isValid')) {
+                    tab.addClass('success');
+                } else {
+                    return false;
+                }
+            },
+            onTabClick: function (tab, navigation, index) {
+                var form = $('.form' + (index + 1))
+                form.parsley('validate');
+                if (form.parsley('isValid')) {
+                    tab.addClass('success');
+                } else {
+                    return false;
+                }
+            }
+
+        });
+        //  Initialize tabDrop
+        $('.tabdrop').tabdrop({text: '<i class="fa fa-th-list"></i>'})
+    </script>
 {% endblock %}
 <!-- /SCRIPTS -->
