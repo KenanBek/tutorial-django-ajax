@@ -4,14 +4,22 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-    <!-- Page content -->
-    {% block page %}
-    {% endblock %}
-    <!-- /Page content -->
+<!-- Page content -->
+{% block page %}
+{% endblock %}
+<!-- /Page content -->
 
-    <!-- Footer scritps -->
-    {% block scripts %}
-    {% endblock %}
-    <!-- /Footer scripts -->
+<hr/>
+<p>
+    Current path: {{ request.path }}<br/>
+    {% if request.path != '/' %}
+        <a href='/'>Back to home page.</a>
+    {% endif %}
+</p>
+
+<!-- Footer scritps -->
+{% block scripts %}
+{% endblock %}
+<!-- /Footer scripts -->
 </body>
 </html>

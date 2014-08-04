@@ -1,29 +1,31 @@
 {% extends "layout.html" %}
 
+<!-- PAGE -->
 {% block page %}
-<h1>
-    {{ message }}
-</h1>
-
-<button type="button">Hello Server!</button>
-
+    <h1>
+        Click button to raise AJAX request.
+    </h1>
+    <button type="button">Hello Server!</button>
 {% endblock %}
+<!-- /PAGE -->
 
+<!-- SCRIPTS -->
 {% block scripts %}
-<script type="text/javascript">
-    $(function() {
-        $("button").click(function() {
-            $.ajax({
-                url: "{% url 'sample1:hello' %}",
-                type: "get",
-                success: function(data) {
-                    alert(data);
-                },
-                failure: function(data) { 
-                    alert("Got an error dude");
-                }
-            });
+    <script type="text/javascript">
+        $(function () {
+            $("button").click(function () {
+                $.ajax({
+                    url: "{% url 'sample1:hello' %}",
+                    type: "get",
+                    success: function (data) {
+                        alert(data);
+                    },
+                    failure: function (data) {
+                        alert("Got an error dude");
+                    }
+                });
+            })
         })
-    })
-</script>
+    </script>
 {% endblock %}
+<!-- /SCRIPTS -->

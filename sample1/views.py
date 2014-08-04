@@ -1,10 +1,10 @@
 from django.http import HttpResponse
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 
-# Create your views here.
 
-def index(request):
-    return render_to_response('sample1/index.html', {'message': 'Hello World!'})
+def index(request, template='sample1/index.html', context={}):
+    return render(request, template, context)
+
 
 def hello(request):
     return HttpResponse('Hello Client!')
