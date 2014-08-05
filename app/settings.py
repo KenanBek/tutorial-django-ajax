@@ -60,9 +60,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
 )
 
-ROOT_URLCONF = 'configuration.urls'
+ROOT_URLCONF = 'app.urls'
 
-WSGI_APPLICATION = 'configuration.wsgi.application'
+WSGI_APPLICATION = 'app.wsgi.application'
 
 
 # Database
