@@ -2,12 +2,16 @@
 <head>
     <title>Tutorial - Dajngo AJAX</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- HEADER -->
+    {% block header %}
+    {% endblock %}
+    <!-- /HEADER -->
 </head>
 <body>
-<!-- Page content -->
+<!-- PAGE -->
 {% block page %}
 {% endblock %}
-<!-- /Page content -->
+<!-- /PAGE -->
 <hr />
 <p>
     Current path: {{ request.path }}<br />
@@ -15,9 +19,9 @@
         <a href='/'>Back to home page.</a>
     {% endif %}
 </p>
-<!-- Footer scritps -->
-{% block scripts %}
+<!-- FOOTER -->
+{% block footer %}
 {% endblock %}
-<!-- /Footer scripts -->
+<!-- /FOOTER -->
 </body>
 </html>
