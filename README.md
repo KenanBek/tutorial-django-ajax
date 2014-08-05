@@ -29,6 +29,6 @@ First command will create database if it is not exists or migrate data if it is 
 
 Here is list of samples:
 
-* **Sample 1** - Very simple example of using AJAX in Python and Django ([Read article](http://kenanbek.me/post/very-simple-example-on-using-ajax-in-python-and-django/))
+* **Sample 1** - Very simple example of using AJAX in Python and Django ([read article](http://kenanbek.me/post/very-simple-example-on-using-ajax-in-python-and-django/))
 * **Sample 2** - Form Wizard with AJAX data processing
 * **Sample 3** - Coming Soon :)
