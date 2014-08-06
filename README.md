@@ -18,7 +18,13 @@ To properly work with this example you need to be installed following libraries:
 * Python 2.7
 * Django 1.6
 
-To run samples just run following commands on your favorite console:
+Used libraries:
+
+* jQuery 1.11.1
+* Bootstrap 2.1.1 (Sample 2)
+* jQuery twitter bootstrap wizard plugin 1.0 (Sample 2)
+
+To run samples just execute following commands on your favorite console:
 
   python manage.py syncdb
   python manage.py runserver
