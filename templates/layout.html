@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <html>
 <head>
     <title>Tutorial - Dajngo AJAX</title>
@@ -14,7 +15,7 @@
         <a href='/'>Back to home page.</a>
     {% endif %}
 </p>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="{% static 'jquery-1.11.1.min.js' %}"></script>
 {% block footer %}
 {% endblock %}
 </body>

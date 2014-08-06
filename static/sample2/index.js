@@ -8,7 +8,11 @@ $(document).ready(function () {
             var $total = navigation.find('li').length;
             var $current = index + 1;
             var $percent = ($current / $total) * 100;
-            $('#form-progress').css({width: $percent + '%'});
+            console.log(parseInt($percent));
+            $('#rootwizard').find('.bar').css({width:$percent+'%'});
+        },
+        onNext: function (tab, navigation, index) {
+            console.log("next tab clicked");
         }
     });
 });

@@ -1,14 +1,11 @@
 {% extends "layout.html" %}
 {% load staticfiles %}
-<!-- HEADER -->
-{% block header %}
-    <script type="text/javascript" src="{% static 'sample1/index.js' %}"></script>
-{% endblock %}
-<!-- /HEADER -->
-<!-- PAGE -->
+
 {% block page %}
-    <h1>
-        Click button to raise AJAX request. </h1>
+    <h1>Click button to raise AJAX request.</h1>
     <button type="button">Hello Server!</button>
 {% endblock %}
-<!-- /PAGE -->
+
+{% block footer %}
+    <script type="text/javascript" src="{% static 'sample1/index.js' %}"></script>
+{% endblock %}

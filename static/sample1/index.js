@@ -1,7 +1,3 @@
-/**
- * Created by kenanbek on 8/5/14.
- */
-
 $(document).ready(document_ready);
 function document_ready() {
     $("button").click(function () {
