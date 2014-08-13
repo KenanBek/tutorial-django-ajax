@@ -1,5 +1,5 @@
 Tutorial on Python, Django and AJAX
-===================================
+-----------------------------------
 
 It is Django based project with contains sample applications on different aspects of using AJAX in Python and Django environment.
 
